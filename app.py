@@ -113,12 +113,11 @@ def generate_image_prompt():
         
         # Prepare the prompt
         prompt_request = f"""
-        Imagine an interactive vr lab station where the user stands inside a circular table with an open entryway. The table is filled with various experiment-related items, each corresponding to specific chapters of study. The user can reach out, grab objects, and interact with them to conduct hands-on experiments. The setup should support multiple experiments covering the key intents of the chapters, ensuring an immersive and educational experience. If a circular table is not feasible, AI can suggest an alternative rectangular table with an open entry design that maintains accessibility and engagement.generate a prompt for an image generation AI to illustrate the following paragraph from an lab experiment content:
+        Imagine an interactive vr lab station where the student stands inside a circular table with an open entryway. The table is filled with various experiment-related items, each corresponding to specific chapters of study. The user can reach out, grab objects, and interact with them to conduct hands-on experiments. The setup should support multiple experiments covering the key intents of the chapters, ensuring an immersive and educational experience. If a circular table is not feasible, AI can suggest an alternative rectangular table with an open entry design that maintains accessibility and engagement.generate a prompt for an image generation AI to illustrate the following paragraph from an lab experiment content:
         
         "{experimentDetails}"
         
         Imagen usage guidelines:
-        - Think like a VR developer and generate image which can be developed in vr
         - Images must adhere to safety guidelines and avoid harmful content
         - Images should be accurate, detailed, and educational
         - Content should be appropriate for students
