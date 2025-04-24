@@ -1,0 +1,15 @@
+runtime: python311 # Choose your desired Python version (e.g., python39, python310, python311, python312)
+entrypoint: gunicorn -b :3000 main:app # Tells App Engine how to start your app
+
+# Optional: Instance class (controls resources/cost)
+# instance_class: F1 # F1 is the smallest/cheapest, default is F1
+
+# Optional: Automatic scaling settings (adjust as needed)
+# automatic_scaling:
+#   target_cpu_utilization: 0.65
+#   min_instances: 0 # Can scale to 0 to save costs when idle
+#   max_instances: 10
+
+# Optional: Environment variables (better to use secrets manager for sensitive data)
+# env_variables:
+#   MY_CONFIG_VAR: 'some_value'
