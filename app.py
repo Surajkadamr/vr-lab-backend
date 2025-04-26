@@ -19,9 +19,8 @@ import re
 load_dotenv()
 
 # Configure API key
-api_key = os.environ.get('AIzaSyC59TDceV-5GBV7KjE_7cOZqzdZMlGx3I0')
-if not api_key:
-    raise ValueError("GOOGLE_API_KEY environment variable not set")
+api_key = 'AIzaSyChPNLGqiMKC7-GVsrrgiWL8Sdx7IGNA-A'
+
 
 # Initialize Flask app
 app = Flask(__name__)
